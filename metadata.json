@@ -1,0 +1,7 @@
+{
+  "name": "Assistant 22",
+  "description": "A simple and friendly guide for seniors to navigate computers and smartphones with ease. Ask any question and get clear, step-by-step answers in Hebrew.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
