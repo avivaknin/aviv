@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A simple and friendly guide for seniors to navigate computers and smartphones with ease.",
   "scripts": {
-    "build": "esbuild index.tsx --bundle --splitting --format=esm --outdir=dist --platform=browser --define:process='{}' --define:process.env.NODE_ENV='\"production\"' && shx cp index.html dist/index.html && shx cp metadata.json dist/metadata.json"
+    "start": "esbuild index.tsx --bundle --outdir=dist --servedir=.",
+    "build": "esbuild index.tsx --bundle --splitting --format=esm --outdir=dist --platform=browser --define:process.env.VITE_GEMINI_API_KEY='\"' --define:process.env.NODE_ENV='\"production\"' && shx cp index.html dist/index.html && shx cp metadata.json dist/metadata.json"
   },
   "dependencies": {
     "@google/genai": "^1.14.0",
